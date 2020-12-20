@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Shape Changer</title>
+</head>
+<body style="background-color: aliceblue">
+    <h1 style="font-size: large; margin-left: 30%;margin-top: 5%;font-size: 100px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Shape Changer</h1>
+    <div  style="margin-left: 30%; margin-top: 5%;background-color: bisque; margin-right: 30%; border: 2px purple solid; padding: 2% 7% 2% 7%;">
+    
+    <div id="shape" style="background-color: aqua; border: 3 px solid purple ; height: 200px ; width: 300px;">
+    </div>
+    <br>
+    <button onclick="Rectangle()" style="margin-right: 10px ;margin-left: 20px; border: 2px dotted red;">Rectangle</button>
+    <button onclick="Sqaure()" style="margin-right: 10px; border: 2px dotted red;">Square</button>
+    <button onclick="Circle()" style="margin-right: 10px; border: 2px dotted red;">Circle</button>
+    </div>
+</body>
+<script>
+    function Rectangle(){
+        document.getElementById("shape").style["backgroundColor"]="red";
+        document.getElementById("shape").style["border-radius"]="0%";
+        document.getElementById("shape").style["margin-left"]="0%";
+        document.getElementById("shape").style["width"]="400px";
+
+    }
+    function Sqaure(){
+        document.getElementById("shape").style["backgroundColor"]="yellow";
+        document.getElementById("shape").style["border-radius"]="0%";
+        document.getElementById("shape").style["margin-left"]="20%";
+        document.getElementById("shape").style["width"]="200px";
+
+    }
+    function Circle(){
+        document.getElementById("shape").style["backgroundColor"]="green";
+        document.getElementById("shape").style["width"]="200px";
+        document.getElementById("shape").style["margin-left"]="20%";
+        document.getElementById("shape").style["border-radius"]="60%";
+
+    }
+</script>
+</html>
